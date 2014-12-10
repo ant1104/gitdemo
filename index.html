@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My mobile page!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="themes/PasticciappTheme.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div data-role="page" id="pagina_iniziale" data-theme="d">
+		<div data-role="header">
+			<h1>Pasticciapp - App di pasticceria</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#pagina_iniziale" class="ui-btn-active ui-state-persist" data-icon="home">Pagina Iniziale</a></li>				
+					<li><a href="#monoporzioni" data-icon="bars">Monoporzioni</a></li>					
+					<li><a href="#ricette_di_base" data-icon="bars">Ricette di base</a></li>					
+				</ul>
+			</div>
+
+		</div>
+		<div data-role="main" class="ui-content">
+			<h1>Tutte le ricette</h1>
+			<p>In ordine alfabetico</p>
+			<form class="ui-filterable">
+			  <input id="myFilter" data-type="search" placeholder="Cerca per nome...">
+			</form>
+			<ul data-role="listview" data-filter="true" data-input="#myFilter" data-autodividers="true" data-inset="true">			  
+			  <li><a href="#crema_pasticcera">Crema pasticcera</a></li>	
+			  <li><a href="#crema_brulee">Creme brulee</a></li>	
+			  <li><a href="#crema_inglese">Pasta frolla</a></li>			  
+			  <li><a href="#tortino">Tortino al cioccolato</a></li>
+			</ul>
+
+		</div>
+		<div data-role="footer">
+			<h2>&copy; Pasticciapp 2014</h2>
+		</div>
+	
+	</div>
+	
+
+<div data-role="page" id="monoporzioni" data-theme="d">
+  <div data-role="header">
+    <h1>Monoporzioni</h1>
+	<div data-role="navbar">
+				<ul>
+					<li><a href="#pagina_iniziale" data-icon="home">Pagina Iniziale</a></li>				
+					<li><a href="#monoporzioni" class="ui-btn-active ui-state-persist" data-icon="bars">Monoporzioni</a></li>					
+					<li><a href="#ricette_di_base" data-icon="bars" data-transition="flip">Ricette di base</a></li>					
+				</ul>
+			</div>
+  </div>
+	  <div data-role="main" class="ui-content">
+		<!--<h1>Monoporzioni</h1>-->
+		<h2>Lista delle ricette Monoporzioni:</h2>
+		<ul data-role="listview" data-inset="true">
+		  <li>
+			<a href="#tortino"><img src="images/monoporzioni/tortino.jpg">Tortino al cioccolato
+			<p>Tortino dal caldo cuore fondente</p></a>
+		  </li>
+		  <li>
+			<a href="#"><img src="images/monoporzioni/cremebrulee.png">Creme brulee
+			<p>Classico della pasticceria francese</p></a>
+		  </li>
+		</ul>
+	  </div>
+  <div data-role="footer">
+    <h2>&copy; Pasticciapp 2014</h2>
+  </div>
+</div>  <!-- monoporzioni -->
+
+<div data-role="page" id="ricette_di_base" data-theme="d">
+  <div data-role="header">
+    <h1>Ricette di base</h1>
+	<div data-role="navbar">
+				<ul>
+					<li><a href="#pagina_iniziale" data-icon="home">Pagina Iniziale</a></li>				
+					<li><a href="#monoporzioni" data-icon="bars" data-transition="flip">Monoporzioni</a></li>					
+					<li><a href="#ricette_di_base" class="ui-btn-active ui-state-persist" data-icon="bars">Ricette di base</a></li>					
+				</ul>
+			</div>
+  </div>
+	  <div data-role="main" class="ui-content">
+		<!--<h1>Monoporzioni</h1>-->
+		<h2>Lista delle ricette di base:</h2>
+		<ul data-role="listview" data-inset="true">
+		  <li>
+			<a href="#"><img src="images/CremaPasticcera.jpg">Crema pasticcera
+			<p>La regina delle creme in pasticceria</p></a>
+		  </li>
+		  <li>
+			<a href="#"><img src="images/PastaFrolla.jpg">Pasta frolla
+			<p>Pasta frolla classica</p></a>
+		  </li>
+		</ul>
+	  </div>
+  <div data-role="footer">
+    <h2>&copy; Pasticciapp 2014</h2>
+  </div>
+</div>  <!-- monoporzioni -->
+
+<!-- TORTINO AL CIOCCOLATO -->
+<div data-role="page" id="tortino" data-theme="d">
+  <div data-role="header">
+	<a href="#pagina_iniziale" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Pagina iniziale</a>
+	<a href="#monoporzioni" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left">Monoporzioni</a>
+    <h1>Tortino al cioccolato</h1>
+  </div>
+	  <div data-role="main" class="ui-content">
+		    <table style="width: 483px; height: 191px;" border="1">
+      <tbody>
+	  <h2>Ricetta schematica</h2>
+        <tr>
+          <td><code>Burro fuso 80 gr. <br>
+              Cioccolato(al 70%) fuso 140 gr. <br>
+              Zucchero 40 gr. </code></td>
+          <td style="width: 163.9px;"><code>Mescolare in una ciotola</code></td>
+          <td style="width: 20.883px;"><code><br>
+            <code><a href="#tortino1Popup" data-rel="popup" data-position-to="window" class="ui-btn ui-shadow ui-corner-all ui-icon-camera ui-btn-icon-notext"></a>
+			<div data-role="popup" id="tortino1Popup">
+				<p>Mescolare in una ciotola</p> 
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/monoporzioni/foto1Popup.jpg" style="width:800px;height:500px;" alt="Skaret View">
+			</div>
+			</code>
+		  </td>
+        </tr>
+        <tr>
+          <td><code>1 uovo intero</code></td>
+          <td><code>Aggiungere e mescolare</code></td>
+          <td><code><a href="#tortino2Popup" data-rel="popup" data-position-to="window" class="ui-btn ui-shadow ui-corner-all ui-icon-camera ui-btn-icon-notext"></a>
+			<div data-role="popup" id="tortino2Popup">
+				<p>Aggiungere un uovo e mescolare</p> 
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/monoporzioni/foto2Popup.jpg" style="width:800px;height:500px;" alt="Skaret View">
+			</div>
+			</code></td>
+        </tr>
+        <tr>
+          <td style="width: 217.817px;"><code>farina 20 gr. </code></td>
+          <td><code>Aggiungere e mescolare</code></td>
+          <td><code><a href="#tortino3Popup" data-rel="popup" data-position-to="window" class="ui-btn ui-shadow ui-corner-all ui-icon-camera ui-btn-icon-notext"></a>
+			<div data-role="popup" id="tortino3Popup">
+				<p>Aggiungere la farina e mescolare</p> 
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/monoporzioni/foto3Popup.jpg" style="width:800px;height:500px;" alt="Skaret View">
+			</div>
+			</code></td>
+        </tr>
+        <tr>
+          <td><code>2 stampini imburrati e infarinati</code></td>
+          <td><code>Colare l'impasto negli stampini</code></td>
+          <td><code><a href="#tortino4Popup" data-rel="popup" data-position-to="window" class="ui-btn ui-shadow ui-corner-all ui-icon-camera ui-btn-icon-notext"></a>
+			<div data-role="popup" id="tortino4Popup">
+				<p>Colare l'impasto negli stampini</p> 
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/monoporzioni/foto4Popup.jpg" style="width:800px;height:500px;" alt="Skaret View">
+			</div>
+			</code></td>
+        </tr>
+        <tr>
+          <td><code>In congelatore</code></td>
+          <td><code>Fino al momento dell'utilizzo</code></td>
+          <td><code><a href="#tortino5Popup" data-rel="popup" data-position-to="window" class="ui-btn ui-shadow ui-corner-all ui-icon-camera ui-btn-icon-notext"></a>
+			<div data-role="popup" id="tortino5Popup">
+				<p>Mescolare in una ciotola</p> 
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/monoporzioni/foto5Popup.jpg" style="width:800px;height:500px;" alt="Skaret View">
+			</div>
+			</code></td>
+        </tr>
+        <tr>
+          <td><code>In forno ventilato</code> </td>
+          <td><code>190 gradi per 10'</code></td>
+          <td><code><a href="#tortino6Popup" data-rel="popup" data-position-to="window" class="ui-btn ui-shadow ui-corner-all ui-icon-camera ui-btn-icon-notext"></a>
+			<div data-role="popup" id="tortino6Popup">
+				<p>Togliere dal forno dopo una decina di minuti quando avra' un cerchio piu' scuro interno</p> 
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/monoporzioni/foto6Popup.jpg" style="width:800px;height:500px;" alt="Skaret View">
+			</div>
+			</code></td>
+        </tr>
+		<tr>
+          <td><code>Risultato finale</code> </td>
+          <td><code>Sformare subito in un piatto</code></td>
+          <td><code><a href="#tortino7Popup" data-rel="popup" data-position-to="window" class="ui-btn ui-shadow ui-corner-all ui-icon-camera ui-btn-icon-notext"></a>
+			<div data-role="popup" id="tortino7Popup">
+				<p>Sformare subito in un piatto e mangiare caldo</p> 
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/monoporzioni/foto7Popup.jpg" style="width:800px;height:500px;" alt="Skaret View">
+			</div>
+			</code></td>
+        </tr>
+      </tbody>
+    </table>
+	
+	  </div>
+  <div data-role="footer" style="text-align:center;">
+    <!--<h2>&copy; Pasticciapp 2014</h2> -->
+	<div data-role="controlgroup" data-type="horizontal">
+		<a href="#tortino_ingredienti_popup" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-icon-bullets ui-btn-icon-left">Ingredienti</a>
+		<a href="#tortino_ingredienti_consigli" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-icon-comment ui-btn-icon-left">Consigli</a>
+	</div>
+	<div data-role="popup" id="tortino_ingredienti_popup"> 
+		<h2>Ingredienti</h2>		
+		<ul>
+			<li>Cioccolato(al 70% di cacao) fuso</li>
+			<li>Burro fuso 80 gr.</li>
+			<li>Zucchero 40 gr.</li>
+			<li>farina '00' 20 gr. </li>
+			<li>burro e farina q.b. per imburrare e infarinare 2 stampini</li>
+		</ul>
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+    </div>
+			
+	<div data-role="popup" id="tortino_ingredienti_consigli">
+				<h2>Consigli</h2>
+		<ul>
+			<li>Se si fonde il cioccolato a bagnomaria portare l'acqua a sobbollire</li>
+			<li>Se si fonde il cioccolato a microonde, usarlo alla massima potenza ma ogni tanto aprire e mescolare, per evitare di bruciare il cioccolato</li>		
+			<li>I tortini si mangiano caldi, quindi conviene congelare gli stampini prima di cuocerli cosi al momento dell'utilizzo si procede con la cottura nel forno pre-riscaldato</li>
+			<li>Si puo' anche evitare di congelare e cuocerli subito, in tal caso i tempi il tempo di cottura diminuisce</li>
+			<li>Spolverizzare di zucchero a velo dopo la cottura</li>
+			<li>Valutare di servire il tortino con una salsa di accompagnamento</li>			
+		</ul>
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+			</div>
+  </div>
+</div>  <!-- TORTINO AL CIOCCOLATO ->
+	
+</body>
+</html>
